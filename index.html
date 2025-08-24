@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora System - Transforme sua Ideia em Código</title>
+    <!-- Inclui a biblioteca Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #06080C; /* Fundo preto profundo */
+            color: #E2E8F0;
+        }
+        .text-gradient-aurora {
+            background-image: linear-gradient(to right, #34D399, #60A5FA, #A855F7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .button-gradient-aurora {
+            background: linear-gradient(90deg, #34D399, #60A5FA, #A855F7);
+        }
+        .card-gradient-aurora {
+            background: linear-gradient(135deg, rgba(52, 211, 153, 0.1), rgba(96, 165, 250, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center p-4 md:p-8">
+
+    <!-- Seção Principal (Hero) -->
+    <header class="text-center py-20 md:py-32 max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter mb-4 text-white">
+            Transforme sua Ideia em Código com
+            <span class="text-gradient-aurora">Aurora System</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 mb-8">
+            Do conceito ao código funcional em minutos. Nossa IA gera prompts e projetos completos prontos para rodar.
+        </p>
+        <a href="#cta" class="button-gradient-aurora px-8 py-4 font-bold text-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            Gerar Meu Projeto (Em Breve)
+        </a>
+    </header>
+
+    <!-- Seção de Recursos/Funcionalidades -->
+    <section id="features" class="max-w-6xl mx-auto my-12 md:my-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+            Como Funciona
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1: Insira a Ideia -->
+            <div class="card-gradient-aurora p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
+                <div class="flex items-center justify-center mb-4 text-gradient-aurora">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-12 h-12">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M16.5 7.5l-3.375 3.375M12 13.5l-3.375-3.375" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-4.5 4.5M19.5 7.5L12 15l-7.5-7.5" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-center mb-2">1. Insira sua Ideia</h3>
+                <p class="text-gray-400 text-center">Descreva seu projeto em linguagem natural. A Aurora System entende sua visão.</p>
+            </div>
+
+            <!-- Card 2: Refine o Prompt -->
+            <div class="card-gradient-aurora p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
+                <div class="flex items-center justify-center mb-4 text-gradient-aurora">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-12 h-12">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12a.75.75 0 110-1.5.75.75 0 010 1.5zM12 17.25a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15M19.5 12a7.5 7.5 0 11-15 0" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-center mb-2">2. Refine com a IA</h3>
+                <p class="text-gray-400 text-center">Nossa IA cria 3 prompts profissionais para você escolher: Curto, Completo e Técnico.</p>
+            </div>
+
+            <!-- Card 3: Receba o Código -->
+            <div class="card-gradient-aurora p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
+                <div class="flex items-center justify-center mb-4 text-gradient-aurora">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-12 h-12">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 8.25L14.25 12l-3.75 3.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-center mb-2">3. Obtenha o Código</h3>
+                <p class="text-gray-400 text-center">Escolha seu stack (Next.js, Node.js, Python FastAPI) e receba o código funcional completo para baixar ou exportar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova seção de demonstração da IA -->
+    <section id="demo" class="max-w-4xl mx-auto my-12 md:my-20 w-full">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+            ✨ Experimente a Magia da IA ✨
+        </h2>
+        <div class="card-gradient-aurora p-8 rounded-2xl shadow-xl flex flex-col items-center">
+            <h3 class="text-2xl font-bold mb-4">Transforme sua ideia em um prompt</h3>
+            <p class="text-gray-400 text-center mb-6">Descreva brevemente sua ideia para um projeto de software e veja a IA gerar um prompt profissional para você.</p>
+            <div class="w-full flex flex-col md:flex-row items-center gap-4">
+                <textarea id="ideaInput" rows="4" placeholder="Ex: Criar um app de lista de tarefas para equipes com login e um dashboard simples." class="w-full p-4 rounded-lg bg-gray-800 border-2 border-gray-700 focus:outline-none focus:border-blue-400 transition-all duration-200 resize-none"></textarea>
+                <button id="generatePromptButton" class="button-gradient-aurora w-full md:w-auto px-8 py-3 font-bold text-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    Gerar Prompt ✨
+                </button>
+            </div>
+            <div id="outputContainer" class="w-full mt-6 hidden">
+                <h4 class="text-xl font-semibold mb-2">Seu Prompt Gerado:</h4>
+                <div class="relative">
+                    <pre id="promptOutput" class="w-full p-4 rounded-lg bg-gray-900 border border-gray-700 text-gray-200 overflow-x-auto whitespace-pre-wrap break-words"></pre>
+                    <button id="copyButton" class="absolute top-2 right-2 p-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors duration-200 text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v-2.25m0-1.5V12m0-1.5V9m0-1.5H8.25m0 0a2.25 2.25 0 01-2.25-2.25v-1.5a2.25 2.25 0 012.25-2.25h11.5a2.25 2.25 0 012.25 2.25v1.5a2.25 2.25 0 01-2.25 2.25h-11.5a2.25 2.25 0 01-2.25-2.25z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="loadingIndicator" class="mt-6 hidden">
+                <div class="flex items-center space-x-2">
+                    <div class="w-4 h-4 rounded-full animate-pulse button-gradient-aurora"></div>
+                    <div class="w-4 h-4 rounded-full animate-pulse button-gradient-aurora" style="animation-delay: 0.2s;"></div>
+                    <div class="w-4 h-4 rounded-full animate-pulse button-gradient-aurora" style="animation-delay: 0.4s;"></div>
+                    <span class="text-gray-400">Gerando prompt...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Exemplos -->
+    <section id="examples" class="max-w-6xl mx-auto my-12 md:my-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+            Exemplos de Projetos
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Exemplo 1 -->
+            <div class="card-gradient-aurora p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-2">Plataforma de E-commerce</h3>
+                <p class="text-gray-400 mb-4">Crie um e-commerce completo com Next.js, autenticação de usuário e painel de admin em minutos.</p>
+                <span class="text-sm font-semibold text-gray-500">
+                    Stacks: Next.js, Node.js
+                </span>
+            </div>
+            <!-- Exemplo 2 -->
+            <div class="card-gradient-aurora p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-2">Sistema de Gerenciamento de Conteúdo</h3>
+                <p class="text-gray-400 mb-4">Desenvolva um CMS personalizado com Python FastAPI e um banco de dados relacional.</p>
+                <span class="text-sm font-semibold text-gray-500">
+                    Stacks: Python FastAPI, Node.js
+                </span>
+            </div>
+            <!-- Exemplo 3 -->
+            <div class="card-gradient-aurora p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-2">API de Recomendação de Produtos</h3>
+                <p class="text-gray-400 mb-4">Uma API poderosa que recomenda produtos com base em interações do usuário, construída com Node.js.</p>
+                <span class="text-sm font-semibold text-gray-500">
+                    Stacks: Node.js, Python FastAPI
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Chamada para Ação (CTA) -->
+    <section id="cta" class="max-w-4xl mx-auto my-12 md:my-20 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Seja um dos primeiros a usar o Aurora System.
+        </h2>
+        <p class="text-lg md:text-xl text-gray-400 mb-8">
+            A plataforma está em desenvolvimento. Junte-se à lista de espera e seja notificado no lançamento.
+        </p>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+            <!-- Este é um campo de texto simulado. Você precisará de um serviço de formulário de e-mail (como Mailchimp, Substack, etc.) para fazê-lo funcionar de verdade. -->
+            <input type="email" placeholder="Digite seu melhor e-mail..." class="w-full md:w-auto p-3 rounded-lg bg-gray-800 border-2 border-gray-700 focus:outline-none focus:border-blue-400 transition-all duration-200">
+            <button class="button-gradient-aurora w-full md:w-auto px-8 py-3 font-bold text-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                Entrar na Lista de Espera
+            </button>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center text-gray-500 text-sm mt-12 md:mt-20 py-8">
+        © 2024 Aurora System. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        const generateButton = document.getElementById('generatePromptButton');
+        const ideaInput = document.getElementById('ideaInput');
+        const promptOutput = document.getElementById('promptOutput');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const outputContainer = document.getElementById('outputContainer');
+        const copyButton = document.getElementById('copyButton');
+
+        // Handles the Gemini API call to generate a prompt from the user's idea.
+        async function generatePrompt(idea) {
+            const prompt = `Act as a professional software engineer. A user wants to create a SaaS platform that generates code from ideas. Your task is to take a simple idea and convert it into a detailed, technical, and professional prompt that can be used to generate a full-stack project. The prompt should include details on:
+- Frontend stack (e.g., Next.js, React) and key components (e.g., dashboard, login page, forms).
+- Backend stack (e.g., Node.js, Python FastAPI) and key endpoints (e.g., /api/projects, /api/users).
+- Database details (e.g., PostgreSQL, MongoDB) and schemas.
+- Key features and functionalities.
+The user's idea is: "${idea}"
+
+Generate only the prompt text, without any conversational or introductory text. Do not add markdown headers. The prompt should be ready to be copied and used directly.`;
+
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+            const payload = { contents: chatHistory };
+            const apiKey = "";
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            try {
+                loadingIndicator.classList.remove('hidden');
+                outputContainer.classList.add('hidden');
+                generateButton.disabled = true;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API Error: ${response.statusText}`);
+                }
+
+                const result = await response.json();
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                if (text) {
+                    promptOutput.textContent = text.trim();
+                    outputContainer.classList.remove('hidden');
+                } else {
+                    promptOutput.textContent = 'Desculpe, não consegui gerar um prompt. Tente novamente.';
+                    outputContainer.classList.remove('hidden');
+                }
+            } catch (error) {
+                console.error('API call failed:', error);
+                promptOutput.textContent = 'Ocorreu um erro. Por favor, tente novamente mais tarde.';
+                outputContainer.classList.remove('hidden');
+            } finally {
+                loadingIndicator.classList.add('hidden');
+                generateButton.disabled = false;
+            }
+        }
+
+        // Event listener for the generate button.
+        generateButton.addEventListener('click', () => {
+            const idea = ideaInput.value.trim();
+            if (idea) {
+                generatePrompt(idea);
+            } else {
+                promptOutput.textContent = 'Por favor, insira uma ideia para gerar o prompt.';
+                outputContainer.classList.remove('hidden');
+            }
+        });
+
+        // Event listener for the copy button.
+        copyButton.addEventListener('click', () => {
+            const textToCopy = promptOutput.textContent;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const originalText = copyButton.innerHTML;
+                copyButton.innerHTML = 'Copiado!';
+                setTimeout(() => {
+                    copyButton.innerHTML = originalText;
+                }, 2000);
+            }).catch(err => {
+                console.error('Could not copy text: ', err);
+            });
+        });
+    </script>
+</body>
+</html>
